@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Celulares</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <section id="inicio" class="carousel">
+        <div class="carousel-container">
+            <img class="carousel-img active" src="Imagen de WhatsApp 2024-10-16 a las 16.21.37_cc84aaf1.jpg" alt="Celular 1">
+            <img class="carousel-img" src="Imagen de WhatsApp 2024-10-16 a las 16.21.54_3abb664e.jpg" alt="Celular 2">
+            <img class="carousel-img" src="Imagen de WhatsApp 2024-10-16 a las 16.22.24_9e807036.jpg" alt="Celular 3">
+        </div>
+        <div class="carousel-buttons">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </section>
+
+    <!-- Catálogo de productos -->
+    <section id="catalogo" class="catalogo">
+        <h2>Catálogo de Productos</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="celular1.jpg" alt="Celular Modelo 1">
+                <h3>Celular Modelo 1</h3>
+                <p>Precio: $5000 MXN</p>
+            </div>
+            <div class="producto">
+                <img src="celular2.jpg" alt="Celular Modelo 2">
+                <h3>Celular Modelo 2</h3>
+                <p>Precio: $6000 MXN</p>
+            </div>
+            <div class="producto">
+                <img src="celular3.jpg" alt="Celular Modelo 3">
+                <h3>Celular Modelo 3</h3>
+                <p>Precio: $7000 MXN</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Venta de Celulares. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
